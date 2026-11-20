@@ -1196,3 +1196,36 @@ tr:last-child td {
     flex-wrap: wrap;
   }
 }
+
+
+/* Fix invisible text inside input fields and textareas */
+input,
+textarea,
+select {
+  color: #25243a !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #25243a !important;
+  caret-color: #6552a5 !important;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+  color: #88869a !important;
+  opacity: 1 !important;
+}
+
+/* Focused fields */
+input:focus,
+textarea:focus,
+select:focus {
+  color: #25243a !important;
+  -webkit-text-fill-color: #25243a !important;
+  outline-color: #6552a5;
+}
+
+/* Dropdown options */
+select option {
+  color: #25243a;
+  background-color: #ffffff;
+}
